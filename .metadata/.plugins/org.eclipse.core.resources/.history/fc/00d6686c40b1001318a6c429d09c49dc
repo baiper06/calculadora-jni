@@ -1,0 +1,16 @@
+/*
+ * com_baiper06_jni_Main.c
+ *
+ *  Created on: 21/03/2014
+ *      Author: bairon
+ */
+
+
+#include <jni.h>
+#include "../JavaCalc/bin/com_baiper06_jni_Main.h"
+#include <stdio.h>
+
+JNIEXPORT int JNICALL Java_com_baiper06_jni_Main_add(JNIEnv *env, jobject obj){
+	printf("Hello world!\n");
+	return 5;
+}

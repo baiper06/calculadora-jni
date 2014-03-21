@@ -1,0 +1,15 @@
+15:42:50 **** Incremental Build of configuration Release for project CFunctions ****
+make all 
+Building file: ../com_baiper06_jni_Main.c
+Invoking: Cross GCC Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux -O3 -Wall -c -fmessage-length=0 -ansi -fPIC -MMD -MP -MF"com_baiper06_jni_Main.d" -MT"com_baiper06_jni_Main.d" -o "com_baiper06_jni_Main.o" "../com_baiper06_jni_Main.c"
+Finished building: ../com_baiper06_jni_Main.c
+ 
+Building target: libCFunctions.so
+Invoking: Cross GCC Linker
+gcc -shared -o "libCFunctions.so"  ./com_baiper06_jni_Main.o   
+Finished building target: libCFunctions.so
+ 
+
+15:42:50 Build Finished (took 332ms)
+

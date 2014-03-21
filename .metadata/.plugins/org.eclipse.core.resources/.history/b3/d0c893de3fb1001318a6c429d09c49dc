@@ -1,0 +1,14 @@
+package com.baiper06.jni;
+
+public class Main {
+	 public native void add();
+
+	 static {
+		 System.loadLibrary("CFunctions");
+	 }
+
+	 public static void main(String[] args) {
+		 Main h = new Main();
+		 h.add(3, 2);
+	 }
+}

@@ -5,24 +5,14 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 
 import com.baiper06.jni.Main;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
-import com.jgoodies.forms.factories.FormFactory;
-
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 
 import java.awt.GridBagLayout;
 
-import javax.swing.JPanel;
-
-import java.awt.BorderLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-
-import javax.swing.JSpinner;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;

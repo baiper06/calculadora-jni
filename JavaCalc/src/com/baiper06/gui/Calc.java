@@ -52,11 +52,21 @@ public class Calc {
 	}
 	
 	public float getNumber1(){
-		return Float.parseFloat( textField_1.getText() );
+		try{
+			return Float.parseFloat( textField_1.getText() );
+		}catch( Exception e){
+			textField_1.setText("0");
+			return 0;
+		}
 	}
 	
 	public float getNumber2(){
-		return Float.parseFloat( textField_2.getText() );
+		try{
+			return Float.parseFloat( textField_2.getText() );
+		}catch( Exception e){
+			textField_2.setText("0");
+			return 0;
+		}
 	}
 
 	/**
@@ -182,6 +192,7 @@ public class Calc {
 		frame.getContentPane().add(lblResultado, gbc_lblResultado);
 		
 		textField_result = new JTextField();
+		textField_result.setEditable(false);
 		GridBagConstraints gbc_textField_result = new GridBagConstraints();
 		gbc_textField_result.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_result.gridx = 2;

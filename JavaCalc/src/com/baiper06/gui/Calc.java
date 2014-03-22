@@ -167,8 +167,14 @@ public class Calc {
 		JButton btnDiv = new JButton("Dividir");
 		btnDiv.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int result = math_functions.division( getNumber1(), getNumber2() );
-				textField_result.setText( Integer.toString(result) );
+				if( getNumber2() != 0 ){
+					int result = math_functions.division( getNumber1(), getNumber2() );
+					textField_result.setText( Integer.toString(result) );
+				} else {
+					textField_result.setText( "Error matematico" );
+				}
+				
+				
 			}
 		});
 		GridBagConstraints gbc_btnDiv = new GridBagConstraints();

@@ -51,12 +51,12 @@ public class Calc {
 		initialize();
 	}
 	
-	public int getNumber1(){
-		return Integer.parseInt( textField_1.getText() );
+	public float getNumber1(){
+		return Float.parseFloat( textField_1.getText() );
 	}
 	
-	public int getNumber2(){
-		return Integer.parseInt( textField_2.getText() );
+	public float getNumber2(){
+		return Float.parseFloat( textField_2.getText() );
 	}
 
 	/**
@@ -115,8 +115,8 @@ public class Calc {
 		JButton btnAdd = new JButton("Sumar");
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int result = math_functions.add( getNumber1(), getNumber2() );
-				textField_result.setText( Integer.toString(result) );
+				float result = math_functions.add( getNumber1(), getNumber2() );
+				textField_result.setText(Float.toString(result) );
 			}
 		});
 		GridBagConstraints gbc_btnAdd = new GridBagConstraints();
@@ -129,8 +129,8 @@ public class Calc {
 		JButton btnMult = new JButton("Multiplicar");
 		btnMult.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int result = math_functions.multiplication( getNumber1(), getNumber2() );
-				textField_result.setText( Integer.toString(result) );
+				float result = math_functions.multiplication( getNumber1(), getNumber2() );
+				textField_result.setText( Float.toString(result) );
 			}
 		});
 		GridBagConstraints gbc_btnMult = new GridBagConstraints();
@@ -143,8 +143,8 @@ public class Calc {
 		JButton btnSub = new JButton("Restar");
 		btnSub.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int result = math_functions.subtraction( getNumber1(), getNumber2() );
-				textField_result.setText( Integer.toString(result) );
+				float result = math_functions.subtraction( getNumber1(), getNumber2() );
+				textField_result.setText( Float.toString(result) );
 			}
 		});
 		GridBagConstraints gbc_btnSub = new GridBagConstraints();
@@ -158,8 +158,8 @@ public class Calc {
 		btnDiv.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if( getNumber2() != 0 ){
-					int result = math_functions.division( getNumber1(), getNumber2() );
-					textField_result.setText( Integer.toString(result) );
+					float result = math_functions.division( getNumber1(), getNumber2() );
+					textField_result.setText( Float.toString(result) );
 				} else {
 					textField_result.setText( "Error matematico" );
 				}

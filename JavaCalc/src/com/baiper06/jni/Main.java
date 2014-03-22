@@ -1,18 +1,13 @@
 package com.baiper06.jni;
 
 public class Main {
-	public native int add(			 int pNumberX, int pNumberY);
-	public native int subtraction(	 int pNumberX, int pNumberY);
-	public native int division(		 int pNumberX, int pNumberY);
-	public native int multiplication(int pNumberX, int pNumberY);
+	public native float add(			 float pNumberX, float pNumberY);
+	public native float subtraction(	 float pNumberX, float pNumberY);
+	public native float division(		 float pNumberX, float pNumberY);
+	public native float multiplication(float pNumberX, float pNumberY);
 
 	 static {
 		 System.loadLibrary("CFunctions");
 	 }
-/*
-	 public static void main(String[] args) {
-		 Main h = new Main();
-		 System.out.print( h.division(3, 0) );
-	 }
-*/
+
 }

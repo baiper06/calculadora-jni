@@ -9,9 +9,10 @@ public class Main {
 	 static {
 		 System.loadLibrary("CFunctions");
 	 }
-
+/*
 	 public static void main(String[] args) {
 		 Main h = new Main();
 		 System.out.print( h.division(3, 0) );
 	 }
+*/
 }

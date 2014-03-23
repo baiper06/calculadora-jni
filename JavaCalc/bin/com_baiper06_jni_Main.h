@@ -9,11 +9,35 @@ extern "C" {
 #endif
 /*
  * Class:     com_baiper06_jni_Main
- * Method:    sayHello
- * Signature: ()V
+ * Method:    add
+ * Signature: (FF)F
  */
-JNIEXPORT void JNICALL Java_com_baiper06_jni_Main_sayHello
-  (JNIEnv *, jobject);
+JNIEXPORT jfloat JNICALL Java_com_baiper06_jni_Main_add
+  (JNIEnv *, jobject, jfloat, jfloat);
+
+/*
+ * Class:     com_baiper06_jni_Main
+ * Method:    subtraction
+ * Signature: (FF)F
+ */
+JNIEXPORT jfloat JNICALL Java_com_baiper06_jni_Main_subtraction
+  (JNIEnv *, jobject, jfloat, jfloat);
+
+/*
+ * Class:     com_baiper06_jni_Main
+ * Method:    division
+ * Signature: (FF)F
+ */
+JNIEXPORT jfloat JNICALL Java_com_baiper06_jni_Main_division
+  (JNIEnv *, jobject, jfloat, jfloat);
+
+/*
+ * Class:     com_baiper06_jni_Main
+ * Method:    multiplication
+ * Signature: (FF)F
+ */
+JNIEXPORT jfloat JNICALL Java_com_baiper06_jni_Main_multiplication
+  (JNIEnv *, jobject, jfloat, jfloat);
 
 #ifdef __cplusplus
 }
